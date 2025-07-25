@@ -15,3 +15,4 @@
 local.properties
 /.idea/AndroidProjectSystem.xml
 /.env
+/.vscode/settings.json

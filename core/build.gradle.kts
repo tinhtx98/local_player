@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.ksp)
 }
 
 android {
@@ -55,7 +56,7 @@ dependencies {
 
     // Hilt (for viewmodels, etc. in features that depend on core)
     implementation(libs.hilt.android)
-    // ksp is not needed here, but in the modules that use @AndroidEntryPoint
+    ksp(libs.hilt.compiler)
     implementation(libs.hilt.navigation.compose)
 
 

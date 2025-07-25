@@ -77,6 +77,10 @@ dependencies {
     implementation(libs.compose.material3)
     implementation(libs.navigation.compose)
 
+    // Room
+    implementation(libs.room.runtime)
+    implementation(libs.room.ktx)
+    ksp(libs.room.compiler)
 
     // Hilt
     implementation(libs.hilt.android)
